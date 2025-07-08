@@ -1,0 +1,34 @@
+version: simple-tree-1
+model:
+  - type: space:Company
+    props:
+      drepr:uri: Name
+      rdfs:label: Name
+      space:url: URL
+      space:product:
+        type: space:Product
+        props:
+          drepr:uri: Product ID
+          rdfs:label: Products & Services
+          rdfs:comment: Oneliner
+          space:category:
+            type: space:Category
+            props:
+              drepr:uri: Category
+              rdfs:label: Category
+              space:parent_category:
+                - type: space:Category
+                  props:
+                    drepr:uri: Parent Category
+                    rdfs:label: Parent Category
+          space:service:
+            type: space:Service
+            props:
+              drepr:uri: Service Type
+              rdfs:label: Service Type
+          space:field: Field
+          space:status: Status
+prefixes:
+  space: https://space.isi.edu/ontology/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  drepr: https://purl.org/drepr/1.0/

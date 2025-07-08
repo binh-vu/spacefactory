@@ -1,0 +1,14 @@
+version: simple-tree-1
+model:
+  - type: space:Category
+    props:
+      drepr:uri: ISM Category
+      rdfs:label: ISM Category
+      rdfs:comment: Description
+      space:parent_category:
+        entity: "http://space.isi.edu/resource/5cfbe02b3ab09aea060698d4d6e3530f077ba264cafc96c0d91556ecfc8445c8"
+
+prefixes:
+  space: https://space.isi.edu/ontology/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  drepr: https://purl.org/drepr/1.0/

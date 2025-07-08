@@ -1,0 +1,29 @@
+version: simple-tree-1
+model:
+  - type: space:Company
+    props:
+      drepr:uri: Name
+      rdfs:label: Name
+      space:url: URL
+      space:ism_product:
+        type: space:ISMProduct
+        props:
+          drepr:uri: Product ID
+          rdfs:label: Product ID
+          space:category:
+            type: space:Category
+            props:
+              drepr:uri: ISM Field
+              rdfs:label: ISM Field
+              space:parent_category:
+                entity: "http://space.isi.edu/resource/5cfbe02b3ab09aea060698d4d6e3530f077ba264cafc96c0d91556ecfc8445c8"
+          space:destination: ISM Destination
+          space:technology: ISM Process/Technology
+          space:ism_material: ISM Goods
+          space:status: Status (ISM)
+          space:founded: Founded
+          space:ism_first_launched: First Launch (ISM)
+prefixes:
+  space: https://space.isi.edu/ontology/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  drepr: https://purl.org/drepr/1.0/

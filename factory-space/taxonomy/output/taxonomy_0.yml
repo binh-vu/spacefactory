@@ -1,0 +1,16 @@
+version: simple-tree-1
+model:
+  - type: space:Category
+    props:
+      drepr:uri: Category
+      rdfs:label: Category
+      space:sub_category:
+        - type: space:Service
+          props:
+            drepr:uri: Service
+            rdfs:label: Service
+            rdfs:comment: Description
+prefixes:
+  space: https://space.isi.edu/ontology/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  drepr: https://purl.org/drepr/1.0/

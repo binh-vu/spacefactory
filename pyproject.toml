@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fins"
+version = "1.0.0"
+description = ""
+authors = ["Binh Vu <bvu687@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+duneflow = "==1.0.2"
+kgdata = "==7.0.10"
+libactor = "==2.6.3"
+rdflib = "^7.0.0"
+sem-desc = "==6.19.3"
+drepr-v2 = "==1.6.4"
+ipykernel = "==6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
