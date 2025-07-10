@@ -15,6 +15,7 @@ rdflib = "^7.0.0"
 sem-desc = "==6.19.3"
 drepr-v2 = "==1.6.4"
 ipykernel = "==6.29.5"
+serde2 = "==1.9.2"
 
 [build-system]
 requires = ["poetry-core"]
